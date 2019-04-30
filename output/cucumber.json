@@ -1,0 +1,145 @@
+[
+  {
+    "line": 2,
+    "elements": [
+      {
+        "line": 4,
+        "name": "Execute get API call and verify all required records",
+        "description": "",
+        "id": "as-a-user-of-its-make-api-call;execute-get-api-call-and-verify-all-required-records",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 116158400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "Configure GET \"users\" api call",
+            "match": {
+              "arguments": [
+                {
+                  "val": "users",
+                  "offset": 15
+                }
+              ],
+              "location": "ApiStepDef.configureAPI(String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 700345700,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "Execute api with expected 200 response code",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 26
+                }
+              ],
+              "location": "ApiStepDef.executeAPI(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 6065748100,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify response records should contains details",
+            "match": {
+              "location": "ApiStepDef.verifyRecords(DataTable)"
+            },
+            "rows": [
+              {
+                "cells": [
+                  "ID",
+                  "NAME",
+                  "EMAIL",
+                  "PHONE"
+                ],
+                "line": 8
+              },
+              {
+                "cells": [
+                  "1",
+                  "Leanne Graham",
+                  "Sincere@april.biz",
+                  "1-770-736-8031 x56442"
+                ],
+                "line": 9
+              },
+              {
+                "cells": [
+                  "2",
+                  "Ervin Howell",
+                  "Shanna@melissa.tv",
+                  "010-692-6593 x09125"
+                ],
+                "line": 10
+              },
+              {
+                "cells": [
+                  "3",
+                  "Clementine Bauch",
+                  "Nathan@yesenia.net",
+                  "1-463-123-4447"
+                ],
+                "line": 11
+              },
+              {
+                "cells": [
+                  "4",
+                  "Patricia Lebsack",
+                  "Julianne.OConner@kory.org",
+                  "493-170-9623 x156"
+                ],
+                "line": 12
+              },
+              {
+                "cells": [
+                  "5",
+                  "Chelsey Dietrich",
+                  "Lucio_Hettinger@annie.ca",
+                  "(254)954-1289"
+                ],
+                "line": 13
+              },
+              {
+                "cells": [
+                  "6",
+                  "Mrs. Dennis Schulist",
+                  "Karley_Dach@jasper.info",
+                  "1-477-935-8478 x6430"
+                ],
+                "line": 14
+              }
+            ],
+            "keyword": "Then "
+          }
+        ]
+      }
+    ],
+    "name": "As a user of ITS make API call",
+    "description": "",
+    "id": "as-a-user-of-its-make-api-call",
+    "keyword": "Feature",
+    "uri": "RequestReport_API.feature",
+    "tags": [
+      {
+        "line": 1,
+        "name": "@Api"
+      },
+      {
+        "line": 1,
+        "name": "@Regression"
+      }
+    ]
+  }
+]
